@@ -12,7 +12,7 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
       with:
-        ref: production
+        ref: master
 
     - name: Generate deployment package
       run: zip -r deploy.zip *
