@@ -10,7 +10,9 @@ jobs:
     steps:
     
     - name: Checkout source code
-      uses: actions/checkout@production
+      uses: actions/checkout@v2
+      with:
+        ref: production
 
     - name: Generate deployment package
       run: zip -r deploy.zip *
