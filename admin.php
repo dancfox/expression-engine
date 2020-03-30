@@ -108,6 +108,8 @@
 	// The control panel access constant ensures the CP will be invoked.
 	define('REQ', 'CP');
 
+  exit("check this out: ".FCPATH.'.env.php');
+
 	// force the installer/updater?
 	if (file_exists(FCPATH.'.env.php') && (require FCPATH.'.env.php') == TRUE)
 	{
